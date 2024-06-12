@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊會員</title>
+    <link rel="icon" href="../image/logo/icon-cat.ico">
+    <link rel="stylesheet" href="../assets/sign.css">
+    <script src="../assets/sign.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="100px" frameborder="0"></iframe>
+    <br><br><br>
+    <h1>會員註冊</h1>
+    <br>
+    <div class="block">
+        <h2>
+            <div class="txt">帳號 (e-mail)</div>
+            <input type="email" id="account" size="25px">
+            <div class="txt">密碼</div>
+            <input type="password" id="password" size="25px">
+            <div class="txt">再次輸入密碼</div>
+            <input type="password" id="password2" size="25px">
+            <div class="txt">姓名/名稱</div>
+            <input id="name" size="25px">
+            <div class="txt">性別</div>
+            <span style="font-weight: normal;">
+                <input type="radio" id="sex1" name="sex" value="male" class="button"> 男 &ensp;
+                <input type="radio" id="sex2" name="sex" value="female" class="button"> 女
+            </span>
+            <div class="txt">生日</div>
+            <input id="birthday" type="date">
+            <div class="txt">手機號碼</div>
+            <input type="tel" id="phone" size="25px">
+            <div class="txt">地址</div>
+            <input id="address" size="25px">
+            <br><br>
+        </h2>
+    </div>
+
+    <button class="btn" onclick="signup()">註冊</button>
+    <button class="btn" onclick="cleardata()">清除</button>
+
+    <footer>
+        © Group_11
+    </footer>
+</body>
+</html>

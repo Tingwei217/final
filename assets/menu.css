@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    background-color: #F9FAEF;
+    color: #666666;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+hr {
+    width: 200px;
+}
+
+.title1 {
+    font-size: 18pt;
+    margin-top: 25px;
+    margin-left: 8px;
+}
+
+.title2 {
+    font-size: 14pt;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 20px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    /* 為了讓 ::after 的位置相對於這個元素 */
+}
+
+a.title1,
+a.title2 {
+    text-decoration: none;
+}
+
+.title2 span {
+    position: relative;
+    /* 讓 ::after 針對 span 定位 */
+}
+
+.title2 span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    /* 確保底線在文字下方 */
+    left: 15px;
+    width: 0;
+    height: 1pt;
+    /* 底線的高度 */
+    background-color: #666666;
+    /* 底線的顏色 */
+    transition: width 0.4s ease-in-out;
+    /* 動畫效果 */
+}
+
+.title2:hover span::after {
+    width: calc(100% - 15px);
+    /* 懸停時底線的寬度 保證底線不延伸到 ▶︎ 符號下方 */
+}

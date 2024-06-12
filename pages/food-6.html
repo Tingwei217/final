@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品頁面</title>
+    <link rel="icon" href="../image/logo/icon-cat.ico">
+    <link rel="stylesheet" href="../assets/product.css">
+    <script src="../assets/product.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="100px" frameborder="0"></iframe>
+    <main>
+        <section class="container1">
+            <img src="../image/product/6.png" alt="商品圖" class="product-image">
+            <div class="product-details">
+                <h2>心心相印雞肉片</h2>
+                <div class="info">▶︎ 簡介：幸福貓咪純淨雞肉肉乾是您貓咪的美味零食，絕對能夠帶給牠們滿滿的幸福感。這款肉乾採用新鮮的雞肉製作而成，口感酥脆，充滿了雞肉的香氣，是貓咪喜愛的美味之選。每一片肉乾都充滿著豐富的蛋白質和營養，是一個理想的健康零食。</div>
+                <div class="info">▶︎ 規格：50g</div>
+                <div class="info">▶︎ 產地：新加坡</div>
+                <div class="info">▶︎ 主要成分:雞肉、甘薯、天然香料、維生素和礦物質混合物</div>
+                <div class="product-quantity">
+                    <button onclick="decreaseQuantity()">–</button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="product-actions">
+                    <button onclick="AddtoCar(6,70,'心心相印雞肉片')">加入購物車</button>
+                    <button onclick="BuyNow(6,70,'心心相印雞肉片')">直接購買</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container2">
+            <h1>評論</h1>
+            <hr>
+            <div class="comment">
+                <img src="../image/product/user.png">
+                <div class="commenttext">
+                    <h3>Stella &emsp; ★ ★ ★ ★ ☆</h3>
+                    <p>我未來的小貓咪一定會很愛</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="../image/product/user.png">
+                <div class="commenttext">
+                    <h3>Nicole&emsp;&emsp;★ ★ ★ ★ ★</h3>
+                    <p>Excellent~</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="../image/product/user.png">
+                <div class="commenttext">
+                    <h3>Doris &emsp; ★ ★ ★ ★ ☆</h3>
+                    <p>我的小貓很喜歡</p>
+                </div>
+            </div>
+            <button onclick="showCommentModal()">新增評論</button>
+
+        </section>
+    </main>
+    <footer>
+        © Group_11
+    </footer>
+</body>
+</html>

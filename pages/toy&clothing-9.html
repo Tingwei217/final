@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品頁面</title>
+    <link rel="icon" href="../image/logo/icon-cat.ico">
+    <link rel="stylesheet" href="../assets/product.css">
+    <script src="../assets/product.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="100px" frameborder="0"></iframe>
+    <main>
+        <section class="container1">
+            <img src="../image/product/19.png" alt="商品圖" class="product-image">
+            <div class="product-details">
+                <h2>時尚橙黑條紋項圈</h2>
+                <div class="info">▶︎ 簡介：這款項圈以鮮明的橙黑條紋設計，為貓咪增添時尚感。</div>
+                <div class="info">▶︎ 產地：法國</div>
+                <div class="info">▶︎ 材質:採用耐用的合成纖維製成，配有金屬扣和吊牌。</div>
+                <div class="product-quantity">
+                    <button onclick="decreaseQuantity()">–</button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="product-actions">
+                    <button onclick="AddtoCar(19,350,'時尚橙黑條紋項圈')">加入購物車</button>
+                    <button onclick="BuyNow(19,350,'時尚橙黑條紋項圈')">直接購買</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container2">
+            <h1>評論</h1>
+            <hr>
+            <div class="comment">
+                <img src="../image/product/user.png">
+                <div class="commenttext">
+                    <h3>Ruby &emsp; ★ ★ ★ ☆ ☆</h3>
+                    <p>以這個價錢來說還不錯!</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="../image/product/user.png">
+                <div class="commenttext">
+                    <h3>Wendy&emsp;&emsp;★ ★ ★ ★ ★</h3>
+                    <p>顏色很時尚，路人會稱讚。</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="../image/product/user.png">
+                <div class="commenttext">
+                    <h3>Erica &emsp; ★ ★ ★ ★ ☆</h3>
+                    <p>商品良好，下次會回購</p>
+                </div>
+            </div>
+            <button onclick="showCommentModal()">新增評論</button>
+
+        </section>
+    </main>
+    <footer>
+        © Group_11
+    </footer>
+</body>
+</html>

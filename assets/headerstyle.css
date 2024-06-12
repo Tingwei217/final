@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    background-color: #F9FAEF;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 550;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* 先移除預設的底線 */
+    color: #333;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    /* 添加底線並設置為透明 */
+    padding-bottom: 3px;
+    /* 增加下方間距，讓底線顯得更清晰 */
+    transition: border-bottom-color 0.2s;
+    /* 添加過渡效果 */
+}
+
+nav ul li a:hover {
+    border-bottom-color: #415A77;
+}
+
+.login-button {
+    background-color: #415A77;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.login-button:hover {
+    background-color: #32455C;
+}

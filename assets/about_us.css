@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    background-color: #F9FAEF;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 550;
+    user-select: none;
+}
+
+main {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 850px);
+    /* 將網格的行設置為兩行，每行的高度400px */
+    grid-gap: 8px;
+    width: 90%;
+}
+
+.title {
+    text-align: center;
+    font-size: 50pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: #666666;
+    margin-top: 70px;
+}
+
+hr {
+    margin: auto;
+    width: 900px;
+    border-top: 2px solid #666666;
+}
+
+section {
+    color: #666666;
+    text-align: center;
+    margin: 20px;
+}
+
+section img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 25pt;
+    margin-bottom: 10px;
+}
+
+.grade,
+.birth,
+.intrest,
+.dital {
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    margin: 0;
+    background-color: #415A77;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}

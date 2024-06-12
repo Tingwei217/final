@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    background-color: #F9FAEF;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+    color: #666666;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 38pt;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+main {
+    float: right;
+    width: 70%;
+    margin: 60px 70px 100px -30px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.product-card {
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    border-radius: 8px;
+    width: 80%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    color: #888888;
+    font-size: 16pt;
+}
+
+.product-price {
+    font-size: 14pt;
+    color: #888888;
+    margin: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+footer {
+    margin: 0;
+    background-color: #415A77;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    background-color: #F9FAEF;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 550;
+    user-select: none;
+}
+
+.slide img {
+    height: 445px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.container1 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    margin-top: -100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #32455C;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.container2 {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    /* 將網格的行設置為兩行，每行的高度400px */
+    grid-gap: 20px;
+    width: 85%;
+}
+
+.category {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    /* 圓角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 陰影 */
+    overflow: hidden;
+    /* 防止圖片溢出 */
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 確保圖片覆蓋整個區塊並保持比例 */
+}
+
+.category1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.category2 {
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+}
+
+.category3 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.category4 {
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* 黑色遮罩，透明度50% */
+    color: white;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    opacity: 0;
+    /* 初始設置為不可見 */
+    transition: opacity 0.3s ease;
+    /* 過渡效果 */
+}
+
+.category:hover .overlay {
+    opacity: 1;
+    /* 滑鼠懸停時顯示遮罩 */
+}
+
+.title {
+    text-align: center;
+    font-size: 50pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: #666666;
+    margin-top: 70px;
+}
+
+hr {
+    margin: auto;
+    width: 85%;
+    border-top: 2px solid #666666;
+}
+
+.container3 {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 850px);
+    /* 將網格的行設置為兩行，每行的高度400px */
+    grid-gap: 8px;
+    width: 90%;
+}
+
+section {
+    color: #666666;
+    text-align: center;
+    margin: 20px;
+}
+
+section img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 25pt;
+    margin-bottom: 10px;
+}
+
+.grade,
+.birth,
+.intrest,
+.dital {
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin: 0;
+    background-color: #415A77;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
