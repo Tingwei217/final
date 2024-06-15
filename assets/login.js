@@ -1,3 +1,11 @@
+window.onload = function() {
+    document.addEventListener('keydown', function(event) {
+        if (event.key == 'Enter') {
+            login();
+        }
+    });
+}
+
 function login() {
     var account = document.getElementById("account").value;
     var password = document.getElementById("password").value;
@@ -5,7 +13,7 @@ function login() {
     var account1 = sessionStorage.getItem("account");
     var password1 = sessionStorage.getItem("password");
 
-    if (account == "admin" && password == "1234") {
+    if (account == "test@gmail.com" && password == "1234") {
         window.alert("登入成功！ \n自動跳轉到首頁");
         window.location.href = "../index.html";
         sessionStorage.setItem("login", "1");

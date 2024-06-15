@@ -110,7 +110,7 @@ function showCommentModal() {
     <div class="comment">
       <img src="../image/product/user.png">
       <div class="commenttext">
-        <h3>${userName} &emsp; ${'★'.repeat(starRating)}${'☆'.repeat(5 - starRating)}</h3>
+        <h3>${userName} &emsp; ${'★ '.repeat(starRating)}${'☆ '.repeat(5 - starRating).trim()}</h3>
         <p>${commentText}</p>
       </div>
     </div>

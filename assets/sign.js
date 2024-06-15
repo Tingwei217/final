@@ -1,3 +1,11 @@
+window.onload = function() {
+    document.addEventListener('keydown', function(event) {
+        if (event.key == 'Enter') {
+            signup();
+        }
+    });
+}
+
 function signup() {
     var account = document.getElementById("account").value;
     var password = document.getElementById("password").value;
