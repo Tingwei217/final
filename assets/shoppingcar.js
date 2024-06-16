@@ -1,5 +1,5 @@
 window.onload = function() {
-    let totalPrice = 0;
+    var totalPrice = 0;
     var block2 = document.createElement('div');
     block2.id = 'block2';
 

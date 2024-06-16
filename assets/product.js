@@ -28,7 +28,7 @@ function BuyNow(x,y,z) {
   sessionStorage.setItem("p" + x, y);
   sessionStorage.setItem("n" + x, z);
   sessionStorage.setItem("q" + x, quantity);
-  window.location.href = 'shoppingcar.html'; // 假設結帳頁面為checkout.html
+  window.location.href = 'shoppingcar.html';
 };
 
 // 新增評論 當使用者按下新增評論按鈕時，觸發顯示彈跳視窗的函式
